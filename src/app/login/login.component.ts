@@ -1,10 +1,15 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: '[app-login]',
+  selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })
 export class LoginComponent {
+  public name:string="prathap"
+
+  public callThisFunction():string{
+    return `Hello ${this.name}`
+  }
 
 }
